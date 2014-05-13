@@ -26,24 +26,24 @@ class PlayingCard implements Card
 		    this.suit = 0;
 		}
 		 		 
-			 this.rank = rank;
+		    this.rank = rank;
 
 
 		
 	}
 	
-    public void setRank(int rank)
-	{
-			this.rank = rank;
+	    public void setRank(int rank)
+	   {
+		this.rank = rank;
+		
+	   }
 	
-	}
-	
-	public int getRank()
-	{
+	   public int getRank()
+	  {
 		return rank;
-	
-	}
-	
+		
+	  }
+		
 
 	public void  setSuit(int suit)
 	{
