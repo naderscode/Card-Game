@@ -9,29 +9,30 @@ public class MyCardGame
 		
 				
 		String s="";
-        String r="";
+		String r="";
 				
 		try
-			{
+		{
+		   
 
 				
-                List deck = new ArrayList();
-                        
-                BufferedReader br = new BufferedReader(new FileReader("cards.txt"));
-                String card = br.readLine();
-                while(card != null)
-                {
+	                List deck = new ArrayList();
+	                        
+	                BufferedReader br = new BufferedReader(new FileReader("cards.txt"));
+	                String card = br.readLine();
+	                while(card != null)
+                	{
 
-                    StringTokenizer st = new StringTokenizer(card);
-                   s = st.nextToken();
-                   r= st.nextToken();
-                    int rank = Integer.parseInt(r);
-                    PlayingCard p1 = new PlayingCard(s, rank);
-                    deck.add(p1);
-                    card = br.readLine();
-                  //System.out.println(deck);
-                    System.out.println(p1.toString());
-                  //p1.toString();
+	                   StringTokenizer st = new StringTokenizer(card);
+	                   s = st.nextToken();
+	                   r= st.nextToken();
+	                   int rank = Integer.parseInt(r);
+	                   PlayingCard p1 = new PlayingCard(s, rank);
+	                   deck.add(p1);
+	                   card = br.readLine();
+	                   //System.out.println(deck);
+	                   System.out.println(p1.toString());
+	                   //p1.toString();
                 }//end loop
             }//end try
             catch (IOException e)
